@@ -1,0 +1,52 @@
+<script type="text/javascript">
+// 1. Создайте переменные со следующими значениями:
+let a = 5734050;
+let b ='BORSCH';
+let c = true;
+let d ='false';
+let e = null;
+let f = NaN;
+let g = undefined;
+
+// 2. Определите тип данных у созданных переменных и выведите в консоль.
+console.log(a + ' - ' + typeof a);
+console.log(b + ' - ' + typeof b);
+console.log(c + ' - ' + typeof c);
+console.log(d + ' - ' + typeof d);
+console.log(e + ' - ' + typeof e);
+console.log(f + ' - ' + typeof f);
+console.log(g + ' - ' + typeof g);
+
+// 3. Задайте переменную "цена игрушки" (на английском, конечно!), присвойте в нее значение 25.
+//    Выведите в консоль предложение "Стоимость пяти игрушек равна 125".
+//    При этом предложение должно быть выведено с помощью backticks(``) и переменной "цена игрушки".
+
+let toyPrice = 25;
+let toy = 5;
+console.log(`The cost of five toys is ${toy*toyPrice}`); // интерполяция
+
+// 4. Задайте переменную а со значением 12.
+// Выведите в консоль выражение типа boolean, значение которого равно true, если переменная a четная,
+// и false, если значение переменной a нечетное.
+let a1 = 13;
+const evenA1 = a1%2 === 0;
+console.log(evenA1);
+
+// 5. Задайте переменную, значением которой является количество суток (например, 5). 
+// Напишите последовательность команд, вычисляющих количество часов, минут и секунд в данном количестве суток.
+const days = 10;
+const hours = days * 24;
+const minutes = hours * 60;
+const seconds = minutes * 60;
+console.log(`${days} days contains ${hours} hours ${minutes} minutes ${seconds} seconds`);
+
+// 6. Число жителей города 185600 человек. Ежегодно население в нем увеличивается на 2%. 
+//    Напишите последовательность команд для вычисления количества жителей города через год.
+let peopleInTheCity = 185600;
+let increasePerOneYear = peopleInTheCity * 0.02;
+let year = 1;
+let numberOfPeople= (increasePerOneYear + peopleInTheCity) * year;
+console.log(numberOfPeople);
+
+
+</script>
