@@ -1,0 +1,48 @@
+<script type="text/javascript">
+//Ваши имя и фамилия:
+
+//1. Составьте команды, в которых:
+//   переменной а присваивается значение null;
+let a = null;
+//   выводится значение переменной a;
+console.log(a);
+//   выводится тип переменной a;
+console.log (typeof a);
+//   выводится результат сравнения переменной a с нулем; 
+console.log(a < 0); //false
+console.log(a > 0); //false
+console.log(a >= 0); //true
+console.log(a <= 0); //true
+console.log(a == 0 ); //false
+console.log(a === 0); //false
+console.log(a !== 0); //true
+//   выводится результат сравнения переменной a со значением null; 
+console.log(a < null); //false
+console.log(a > null); //false
+console.log(a >= null); //true
+console.log(a <= null); //true
+console.log(a == null ); //true
+console.log(a === null); //true
+console.log(a !== null); //false
+//   значение переменной a удваивается;
+a = a * 2;
+console.log(a);
+//   переменная увеличивается на 1;
+a = a + 1;
+console.log(a);
+//2. Запишите последовательность команд для решения задачи. Используйте 
+// "говорящие" имена переменных. В каждом углу комнаты сидело по кошке. 
+//  У каждой кошки х котят. Сколько всего ног? Значение x задайте произвольное.
+let cornerInTheRoom = 4;
+let cat = 1;
+let x = 5;
+let kittenCat = x;
+let catInCorner = (cat + kittenCat) * cornerInTheRoom;
+let footInCat = 4;
+let footInRoom = catInCorner * footInCat;
+console.log(footInRoom);
+
+// Выполните программу для значения x = 5 (количество котят у кошки).//96
+// А теперь исправьте количество котят у кошки на значение null и выполните программу.
+// Какой ответ получится? //16
+</script>
