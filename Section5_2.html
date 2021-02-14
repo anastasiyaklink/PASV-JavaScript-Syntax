@@ -1,0 +1,28 @@
+<script type="text/javascript">
+//1. Создайте объект с именем user, который описывает пользователя  
+//   cо свойствами username и status (online или offline). 
+const user = {
+ username: 'Brad',  
+ status: 'online', 
+}
+//2. Выведите объект в консоль.
+console.log(user);
+//3. Добавьте свойство lastActivity, значение которого - 
+//   количество минут проведенных в сети. 
+user.lastActivity = '120min';
+//4. Выведите объект в консоль.
+console.log(user);
+//5. Добавьте свойство password.
+user.password = '123qwerty';
+//6. Удалите свойство lastActivity.
+delete user.lastActivity;
+//7. Добавьте свойство address, являющееся объектом и содержащее 
+//   название города, штата и индекса.
+user.address = {
+ city: 'London',
+ state: 'UK',
+ index: '123456',
+}
+//8. Выведите в консоль город проживания пользователя.
+console.log(user.address.city);
+</script>
