@@ -1,0 +1,28 @@
+<script type="text/javascript">
+//1. Создайте объект, описываающий книгу со следующими свойствами:
+//   authorFirstName, authorLastName, title, style, year,  numberOfPages,
+//   задайте значения свойств объекта.
+const book = {
+  'authorFirstName': 'Ivan',
+  'authorLastName': 'Berezkin',
+  'title': 'Holydays',
+  'style': 'Prose',
+  'year': 2020,
+  'numberOfPages': 5,
+}
+//2. Проверьте существование этих шести свойств у объекта разными способами.
+const hasAuthorFirstName = 'authorFirstName' in book;
+console.log(hasAuthorFirstName);
+const hasAuthorLastName = !!book.authorLastName;
+console.log(hasAuthorLastName);
+const hasTitle = Boolean(book.title);
+console.log(hasTitle);
+const hasStyle = book.hasOwnProperty('style');
+console.log(hasStyle);
+const hasYear = book.year === undefined;
+console.log(hasYear);
+if (book.numberOfPages) console.log('true');
+//3. Проверьте существование у объекта свойства hardcover
+const hasHardcover = !!book['hardcover'];
+console.log(hasHardcover);
+</script>
