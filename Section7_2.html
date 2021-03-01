@@ -1,0 +1,63 @@
+<script type="text/javascript">
+//Тема: Несколько условий if else
+//Ваши имя и фамилия:
+
+//1. Задайте переменную month (номер месяца), присвойте ей значение от 1 до 12.
+//  Найдите и выведите в консоль количество дней в этом месяце для невисокосного года.
+const month = 12;
+let days;
+if (month === 4 || month === 6 || month === 9 || month === 11) {
+  days = 30;
+} else if (month === 2) {
+  days = 28;
+} else {
+  days = 31;
+}
+console.log(days);
+
+//2. Задайте переменную dayOfWeek (номер дня недели) (число от 1 до 7). 
+//  Определите, является этот день выходным днем или рабочим
+// (выведите в консоль 'weekend' или 'work day')
+const dayOfWeek = 5;
+if (dayOfWeek === 6 || dayOfWeek === 7) {
+  console.log('weekend');
+} else {
+  console.log('work day');
+}
+
+//3. Задайте переменную age (возраст пассажира).
+// Найдите стоимость завтрака на круизном пароме, если:  
+// стоимость завтрака для взрослых (18 лет и старше) составляет 10 евро, 
+// для подростков (12 – 17 лет) – 6 евро, 
+// для детей (6-11 лет) – 4 евро, 
+// для детей младше 6 лет – бесплатно. 
+const age = 20;
+let breakfast;
+if (age >= 18) {
+  breakfast = 10;
+} else if (age >= 12 && age <= 17) {
+  breakfast = 6;
+} else if (age >= 6 && age <= 11) {
+  breakfast = 4;
+} else {
+  breakfast = 0;
+}
+console.log('Breakfast for passenger ' + age + ' years - ' + breakfast + ' euro');
+
+//4.Задайте три переменных x, y, z и присвойте им произвольные значения.
+//  Выведите в консоль максимальное значение. 
+// (пользоваться методами нельзя!, только if-else, и желательно - самый короткий способ)
+const x = 5;
+const y = 6;
+const z = 4;
+let max;
+if (x > y && x > z) {
+  max = x;
+} else if (y > x && y > z) {
+  max = y;
+} else {
+  max = z;
+}
+console.log(max);
+
+</script>
