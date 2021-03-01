@@ -1,0 +1,69 @@
+<script type="text/javascript">
+//Тема: Верное условие if и неверное else
+//Ваши имя и фамилия:
+
+//1. Задайте 2 переменные x и y, присвойте им значения 12 и 7
+//  (значения могут меняться, ваш код должен работать правильно всегда!)
+//  Найти и вывести в консоль большее из этих двух чисел.
+const x = 12;
+const y = 7;
+let max;
+if (x > y) {
+  max = x;
+} else {
+  max = y;
+}
+console.log(max);
+
+//2. Задайте переменную a, присвойте ей произвольное значение.
+//  Определите, является ли это значение четным.
+const a = 22;
+let evenNumber;
+if (a % 2 === 0) {
+  evenNumber = 'Number is even';
+} else {
+  evenNumber = 'Number is not even';
+}
+console.log(evenNumber);
+
+//3. Задайте переменную age (возраст человека), присвойте ей произвольное значение.
+//   Определите, является ли этот человек школьником
+//  (школьником будем считать человека в возрасте от 5 до 18 лет включительно).
+const age = 18;
+let school;
+if (age >= 5 && age <= 18) {
+  school = 'This person is schoolkid';
+} else {
+  school = 'This person is not schoolkid';
+}
+console.log(school);
+
+//4. Задайте переменную year, присвойте ей произвольное значение. 
+//   Определите, относится ли год к XXI веку 
+//   (XXI век начинается с 2001 года и заканчивается в 2100 году).
+const year = 2021;
+let centure;
+if (year >= 2001 && year <= 2100) {
+  centure = 'this is XXI';
+} else {
+  centure = 'this is not XXI'
+}
+ console.log(centure);
+
+//5. Задайте переменную  month, присвойте ей значение от 1 до 12.
+//   Выведите в консоль название поры года (Winter, Spring, Summer, Fall). 
+const month = 12;
+let season;
+if (month === 1 || month === 2 || month === 12) {
+  season = 'Winter';
+} else if (month >= 3 && month <= 5) {
+  season = 'Spring';
+} else if (month >= 6 && month <= 8) {
+  season = 'Summer';
+} else {
+  season = 'Fall';
+}
+console.log(season);
+
+
+</script>
