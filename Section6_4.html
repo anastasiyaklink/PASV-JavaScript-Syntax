@@ -1,0 +1,35 @@
+<script type="text/javascript">
+//Тема: НЕ (!)
+//Ваши имя и фамилия:
+//1. Задайте переменную x, присвойте ей значение 100.
+let x = 100;
+// Составьте с помощью операции НЕ(!) и выведите в консоль условия, 
+// значением которых будет true: (например, console.log(!(x===0)) или console.log(x!==0))
+console.log(!(x * 0 < 0));
+console.log(!(x - 99 === 0));
+// x не меньше 50
+console.log(!(x < 50));
+// x не делится на 3
+console.log(!(x % 3===0));
+// тип переменной x - не строка
+console.log(typeof x !== 'string');
+// x не отрицательное число
+console.log(!(x < 0));
+
+//2. Задайте  переменную a, присвойте ей значение null. Придумайте и выведите 
+//   в консоль три условия с использованием переменной а и операции НЕ(!), 
+//   значением которых будет true:
+let a = null;
+console.log(!(a < 0));
+console.log(typeof a !== 'string');
+console.log(a!==0);
+
+//3. Выведите в консоль преобразованные к логическому типу значения: 
+//   5, 'pasv', 0, '', null, undefined 
+console.log(!!5);
+console.log(!!'pasv');
+console.log(!!0 );
+console.log(!!'');
+console.log(!!null);
+console.log(!!undefined);
+</script>
