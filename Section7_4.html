@@ -1,0 +1,79 @@
+<script type="text/javascript">
+//Тема: Не будем забывать о switch!
+//Ваши имя и фамилия:
+//1. Напишите if..else, соответствующий следующему switch:
+let score = 5;
+switch (score) {
+  case 1: 
+  case 2:
+    console.log('very bad');
+    break;
+  case 3: 
+    console.log('bad');
+    break;
+  case 4:
+    console.log('good');
+    break;
+  default:
+    console.log('excellent');
+}
+
+if (score === 1 || score === 2) 
+  console.log('very bad');
+else if (score === 3)
+  console.log('bad');
+else if (score === 4)
+  console.log('good');
+else console.log('exellent');
+// 2. Задайте переменную dayOfWeek (номер дня недели - число от 1 до 7). 
+//   Выведите в консоль название этого дня недели.
+const dayOfWeek = 5;
+switch (dayOfWeek) {
+  case 1:
+    console.log('Monday');
+    break;
+  case 2:
+    console.log('Tuesday');
+    break;
+  case 3:
+    console.log('Wednesday');
+    break;
+  case 4:
+    console.log('Thursday');
+    break;
+  case 5:
+    console.log('Friday');
+    break;
+  case 6:
+    console.log('Saturday');
+    break;
+  default:
+    console.log('Sunday');
+}
+                
+// 3. Задайте переменную month (номер месяца  - число от 1 до 12). 
+//   Выведите в консоль название времени года
+//  (используйте switch с группировкой)
+const month = 11;
+switch (month) {
+  case 12:
+  case 1:
+  case 2:
+    console.log('Winter');
+    break;
+  case 3:
+  case 4:
+  case 5:
+    console.log('Spring');
+    break;
+  case 6:
+  case 7:
+  case 8:
+    console.log('Summer');
+    break;
+  default:
+    console.log('Fall');
+}
+
+
+</script>
