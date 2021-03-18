@@ -1,0 +1,81 @@
+<script type="text/javascript">
+// Тема: Обращение к элементам массива
+// Ваше имя и фамилия:
+
+//1. Создайте массив numbers со значениями:
+//   2, 13, 7, 6, 41, -7, 12, -4, 89, 5. Выведите массив в консоль.
+//  Далее задания 2-8 будут относиться к этому массиву!!!
+
+let numbers = [2, 13, 7, 6, 41, -7, 12, -4, 89, 5];
+console.log(numbers);
+
+//2. С помощью цикла выведите в консоль все отрицательные элементы массива
+
+for (let i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] < 0) {
+    console.log(numbers[i]);
+  }  
+}
+//3. С помощью цикла выведите в консоль все четные элементы массива
+
+for (i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] % 2 === 0) {
+    console.log(numbers[i]);
+  }  
+}
+//4. Подсчитайте количество элементов, значения которых больше 10
+
+let amount = 0;
+for (i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] > 10) {
+   amount ++;
+  } 
+}
+ console.log(amount);
+
+//5. Задайте переменную sum. Найдите сумму элементов массива.
+
+let sum = 0;
+for (i = 0; i < numbers.length; i++ ) {
+   sum += numbers[i];
+}
+ console.log(sum);
+
+//6. Найдите среднее арифметическое элементов массива.
+
+let mean = sum / numbers.length;
+console.log(mean);
+
+//7. Задайте переменную product. Найдите произведение 
+//   положительных элементов массива.
+
+let product = 1;
+for (i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] > 0) {
+   product *= numbers[i];
+  } 
+}
+ console.log(product);
+
+//8. Измените массив, чтобы отрицательные элементы стали положительными.
+
+for (i = 0; i < numbers.length; i++ ) {
+  if (numbers[i] < 0) {
+   numbers[i] = - numbers[i];
+  } 
+}
+ console.log(numbers);
+
+//9. Массив содержит значения роста в см. 1 inch = 2.54 cm
+//   Выведите в консоль массив, который содержит значения роста в inch
+
+let height = [158, 160, 165, 168, 170, 175, 178, 180];
+let heightInInch = [];
+const inch = 2.54;
+for (i = 0; i < height.length; i++ ) {
+  heightInInch.push(Math.round(height[i]/inch));
+}
+ console.log(heightInInch);
+
+
+</script>
